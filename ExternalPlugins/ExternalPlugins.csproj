@@ -50,4 +50,7 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)\ConsoleApp5\Plugins\"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
